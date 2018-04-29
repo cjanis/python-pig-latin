@@ -1,7 +1,6 @@
 def pigLatin(string):
     
     # format text, remove non-alpha, lowercase
-
     string = [i for i in string.lower()]
     for i,letter in enumerate(string):
         if not letter.isalpha() and letter != ' ':
@@ -9,18 +8,15 @@ def pigLatin(string):
     string = ''.join(string)
 
     # translate words
-
     string = [i for i in string.split()]
     for i,word in enumerate(string):
     
-        # if starts with vowel, add "ay" to the end
-        
+        # if starts with vowel, add "ay" to the end        
         if word[0] in 'aeiou':
             # rearrange word
             word = word + 'ay'
             
         # if starts with consonant(s), move them to the end, add ay
-        
         else:
         	# figure out what is the first vowel
             vowels = []
