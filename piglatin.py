@@ -36,4 +36,4 @@ def pigLatin(string):
     string = ' '.join(string)
     print(string)
 
-pigLatin('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Yes!')
+pigLatin('The artist is nothing without the gift, but the gift is nothing without work.')
