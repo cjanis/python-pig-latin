@@ -8,4 +8,4 @@ This script strips out any non-alpha or single space characters, converts everyt
 
 ## note
 
-I intend to turn this into library accessible via PyPI
+Strengthening Python skills, this is for fun. I intend to turn this into library accessible via PyPI.
