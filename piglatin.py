@@ -4,6 +4,18 @@ import re
 # the translator
 def translate(text):
 	
+	# is the text valid?
+	try:
+		re.search('[a-zA-Z]+',text)
+	except:
+		print("Sorry, that's not valid text. Try again!")
+		
+	# are there any digits?
+	try:
+		re.search('[0-9]+',text)
+	except:
+		print("Sorry, no digits allowed. The translator can't handle them. Try again!")
+	
 	# format text
 	text = [i for i in text.lower()]
 	for i,letter in enumerate(text):
@@ -38,32 +50,3 @@ def translate(text):
 
 	# print the translated text
 	return(text)
-
-# prompt for a phrase
-def prompt():
-
-	# add some space at the start
-	print("\n" * 100)
-	
-	# ask for a phrase to translate
-	while True:
-
-		text = input('\nEnter some text to translate into Pig Latin > ')
-
-		# is there at least one letter in the phrase?
-		if not re.search('[a-zA-Z]+',text):
-			print("Sorry, that's not valid text. Try again!")
-		# are there any digits?
-		elif re.search('[0-9]+',text):
-			print("Sorry, no digits allowed. The translator can't handle them. Try again!")
-		else:
-			break
-
-	# translate it
-	print("Got it! Here's your translated text:\n")
-	print(translate(text))
-	
-	# add some spacing
-	print("\n" * 3)
-
-#prompt()
