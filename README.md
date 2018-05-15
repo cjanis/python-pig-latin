@@ -14,20 +14,20 @@ This script converts English text in Pig Latin following these steps:
 
 1. Install with Pip/PyPi:
 
-'''
+```
 pip install pig-latin
-'''
+```
 
 2. In your Python code, import the library:
 
-'''
+```
 import piglatin
-'''
+```
 
 3. Call the translator in your code:
 
-'''
+```
 piglatin.translate('Your text goes here!')
-'''
+```
 
 4. Your text will be translated into Pig Latin and returned as a string.
