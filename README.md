@@ -1,6 +1,8 @@
+# Python Pig Latin
+
 Translate text into Pig Latin using Python
 
-# How it works
+## How it works
 
 This script converts English text in Pig Latin following these steps:
 
@@ -10,7 +12,7 @@ This script converts English text in Pig Latin following these steps:
 - For words that start with vowels, nothing is changed, only the suffix is added
 - Adds suffix "ay" to the end of words
 
-# Instructions
+## Instructions
 
 1. Install with Pip/PyPi:
 
