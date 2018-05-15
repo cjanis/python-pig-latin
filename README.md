@@ -14,7 +14,7 @@ This script converts English text in Pig Latin following these steps:
 
 ## Instructions
 
-Install with Pip/PyPi:
+Install with Pip/PyPi in the command line interface:
 
 ```
 pip install pig-latin
