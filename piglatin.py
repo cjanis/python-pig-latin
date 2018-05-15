@@ -3,19 +3,7 @@ import re
 
 # the translator
 def translate(text):
-	
-	# is the text valid?
-	try:
-		re.search('[a-zA-Z]+',text)
-	except:
-		print("Sorry, that's not valid text. Try again!")
 		
-	# are there any digits?
-	try:
-		re.search('[0-9]+',text)
-	except:
-		print("Sorry, no digits allowed. The translator can't handle them. Try again!")
-	
 	# format text
 	text = [i for i in text.lower()]
 	for i,letter in enumerate(text):
