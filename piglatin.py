@@ -6,7 +6,6 @@ def translate(text):
 		
 	# format text
 	text = [i for i in text.lower()]
-	print(text)
 	for i,letter in enumerate(text):
 		# remove if not alpha, space
 		if not letter.isalpha() and not letter in ' ':

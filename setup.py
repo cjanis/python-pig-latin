@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
  
 setup(name='pig-latin',
-      version='0.1.1',
+      version='0.1.4',
       url='http://github.com/cjanis/python-pig-latin',
       license='Unlicense',
       author='Craig Janis',
